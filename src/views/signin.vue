@@ -1,13 +1,5 @@
-<script>
-export default {
-  data() {
-    return {
-      email: '',
-      password: ''
-      //imageSrc: require('@/assets/image.png') // Adjust the path according to your project structure
-    }
-  }
-}
+<script setup>
+import imageSrc from '@/assets/pexels-olly-3765030.jpg'
 </script>
 
 <template>
@@ -50,7 +42,7 @@ export default {
         </form>
       </div>
 
-      <!-- Image Section -->
+      <!-- Image-->
       <div class="hidden lg:block lg:w-1/2 pl-8">
         <img
           :src="imageSrc"
