@@ -18,7 +18,7 @@ const clearForm = () => {
   }
 }
 
-const submittedCards = ref([]) // Assuming submittedCards is needed for signUp to work
+const submittedCards = ref([])
 
 const signUp = () => {
   validateName(true)
@@ -82,7 +82,7 @@ const validateConfirmPassword = (blur) => {
 <template>
   <div class="flex min-h-screen items-center justify-center bg-gray-100">
     <div class="bg-white p-8 rounded-lg shadow-lg flex w-full max-w-7xl">
-      <!-- Form Section -->
+      <!-- Form -->
       <div class="w-full">
         <h1 class="text-3xl font-bold mb-2 text-black">MindZen</h1>
         <p class="text-gray-800 font-semibold mb-8">Create your account</p>
@@ -144,7 +144,10 @@ const validateConfirmPassword = (blur) => {
             {{ errors.confirmPassword }}
           </div>
           <label class="mb-4 text-sm text-black"> Already have an account? </label>
-          <a href="#" class="text-sm text-red-500 mb-6">Sign in</a>
+          <router-link to="/signin">
+            <a href="#" class="text-sm text-red-500 mb-6">Sign in</a>
+          </router-link>
+
           <button
             type="submit"
             class="mt-6 w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
