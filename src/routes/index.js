@@ -7,8 +7,8 @@ import AdminDashboard from '../views/adminDashboard.vue'
 
 const routes = [
   {
-    path: '/', // Root path
-    redirect: '/signup' // Redirect to /signup as the default behavior
+    path: '/',
+    redirect: '/signup'
   },
   {
     path: '/signup',
