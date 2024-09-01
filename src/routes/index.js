@@ -1,10 +1,9 @@
-// router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import Signup from '../views/signup.vue'
 import Signin from '../views/signin.vue'
 import UserDashboard from '../views/userDashboard.vue'
 import AdminDashboard from '../views/adminDashboard.vue'
-
+import store from '@/store/store'
 const routes = [
   {
     path: '/',

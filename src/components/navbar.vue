@@ -11,8 +11,5 @@
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <a href> Logout </a>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <a href> About </a>
-    </div>
   </nav>
 </template>

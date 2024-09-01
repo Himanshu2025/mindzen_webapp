@@ -1,23 +1,28 @@
 <script setup>
 import imageSrc from '@/assets/pexels-olly-3765030.jpg'
+import { mapActions } from 'vuex'
 </script>
 
 <template>
   <div class="flex min-h-screen items-center justify-center bg-gray-100">
     <div class="bg-white p-8 rounded-lg shadow-lg flex w-full max-w-4xl">
-      <!-- Form Section -->
-      <div class="w-full">
+      <div class="w-full lg:w-1/2 pr-8">
         <h1 class="text-3xl font-bold mb-2">MindZen</h1>
         <p class="text-gray-800 font-semibold mb-8">Sign in</p>
         <form @submit.prevent="signIn">
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <div class="mb-6 flex justify-between items-center">
+              <label for="password" class="block text-sm font-medium text-gray-700">Username</label>
+            </div>
             <input
-              type="email"
-              id="email"
-              v-model="email"
-              placeholder="himanshu@gmail.com"
-              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+              type="text"
+              id="username"
+              required
+              v-model="username"
+              @blur="() => validateName(true)"
+              @input="() => validateName(false)"
+              placeholder="himanshu2025"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 text-black rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
             />
           </div>
           <div class="mb-6 flex justify-between items-center">
