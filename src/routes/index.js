@@ -3,7 +3,10 @@ import Signup from '../views/signup.vue'
 import Signin from '../views/signin.vue'
 import UserDashboard from '../views/userDashboard.vue'
 import AdminDashboard from '../views/adminDashboard.vue'
+import FirebaseSigninView from '../views/FirebaseSigninView.vue'
+import FirebaseRegisterView from '../views/FirebaseRegisterView.vue'
 import store from '@/store/store'
+
 const routes = [
   {
     path: '/',
@@ -28,6 +31,16 @@ const routes = [
     path: '/adminDashboard',
     name: 'adminDashboard',
     component: AdminDashboard
+  },
+  {
+    path: '/Firelogin',
+    name: 'Firelogin',
+    component: FirebaseSigninView
+  },
+  {
+    path: '/Fireregister',
+    name: 'FireRegister',
+    component: FirebaseRegisterView
   }
 ]
 
