@@ -4,16 +4,18 @@
     <p><input type="text" placeholder="Email" v-model="email" /></p>
     <p><input type="password" placeholder="Password" v-model="password" /></p>
     <p><button @click="register">Save to Firebase</button></p>
-    <Button @click="register"> Register </Button>
+    <Button @click="register">Register</Button>
   </div>
 </template>
 
 <script setup>
-import Button from 'primevue/button'
+import { Button } from '@/components/ui/button'
 import InputText from 'primevue/inputtext'
 import { ref } from 'vue'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { useRouter } from 'vue-router'
+import Checkbox from 'primevue/checkbox'
+import DatePicker from 'primevue/datepicker'
 
 const email = ref('')
 const password = ref('')

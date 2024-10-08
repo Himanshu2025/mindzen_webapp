@@ -5,12 +5,8 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config'
 import router from './routes'
 import store from './store/store'
-import aura from './presets/aura'
-
+import './assets/main.css'
 const app = createApp(App)
-app.use(PrimeVue, {
-  preset: Aura
-})
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'

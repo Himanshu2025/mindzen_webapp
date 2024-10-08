@@ -1,0 +1,104 @@
+{
+  "table1Data": [
+    {
+      "name": "John Doe",
+      "age": 16,
+      "gender": "Male",
+      "anxietyLevel": 7,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 5,
+      "mentalHealthDiagnosis": "Generalized Anxiety"
+    },
+    {
+      "name": "Jane Smith",
+      "age": 17,
+      "gender": "Female",
+      "anxietyLevel": 9,
+      "depressionLevel": 9,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Depression"
+    },
+    {
+      "name": "Sarah Collins",
+      "age": 15,
+      "gender": "Female",
+      "anxietyLevel": 4,
+      "depressionLevel": 6,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 3,
+      "mentalHealthDiagnosis": "Mild Depression"
+    },
+    {
+      "name": "Mike Johnson",
+      "age": 18,
+      "gender": "Male",
+      "anxietyLevel": 8,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 10,
+      "mentalHealthDiagnosis": "PTSD"
+    },
+    {
+      "name": "Chloe Kim",
+      "age": 16,
+      "gender": "Female",
+      "anxietyLevel": 6,
+      "depressionLevel": 8,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Social Anxiety Disorder"
+    },
+    {
+      "name": "Adam Lewis",
+      "age": 17,
+      "gender": "Male",
+      "anxietyLevel": 5,
+      "depressionLevel": 4,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 6,
+      "mentalHealthDiagnosis": "ADHD"
+    },
+    {
+      "name": "Sophia Martinez",
+      "age": 14,
+      "gender": "Female",
+      "anxietyLevel": 3,
+      "depressionLevel": 5,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Mild Depression"
+    },
+    {
+      "name": "David Miller",
+      "age": 18,
+      "gender": "Male",
+      "anxietyLevel": 7,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "Bipolar Disorder"
+    },
+    {
+      "name": "Emily Clark",
+      "age": 15,
+      "gender": "Female",
+      "anxietyLevel": 8,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 7,
+      "mentalHealthDiagnosis": "Generalized Anxiety"
+    },
+    {
+      "name": "Robert Brown",
+      "age": 16,
+      "gender": "Male",
+      "anxietyLevel": 6,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 2,
+      "mentalHealthDiagnosis": "Mild Anxiety"
+    }
+  ]
+}

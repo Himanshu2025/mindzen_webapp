@@ -1,0 +1,94 @@
+{
+  "table2Data": [
+    {
+      "name": "John Doe",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 3,
+      "hasRegularSleep": "No",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 4
+    },
+    {
+      "name": "Jane Smith",
+      "participatedInSchoolPrograms": "No",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 1,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "No",
+      "socialMediaUse": 5
+    },
+    {
+      "name": "Sarah Collins",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "No",
+      "physicalActivityHoursPerWeek": 5,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 2
+    },
+    {
+      "name": "Mike Johnson",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 2,
+      "hasRegularSleep": "No",
+      "accessToMentalHealthApps": "No",
+      "socialMediaUse": 3
+    },
+    {
+      "name": "Chloe Kim",
+      "participatedInSchoolPrograms": "No",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 4,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 6
+    },
+    {
+      "name": "Adam Lewis",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "No",
+      "physicalActivityHoursPerWeek": 2,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "No",
+      "socialMediaUse": 3
+    },
+    {
+      "name": "Sophia Martinez",
+      "participatedInSchoolPrograms": "No",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 3,
+      "hasRegularSleep": "No",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 5
+    },
+    {
+      "name": "David Miller",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "No",
+      "physicalActivityHoursPerWeek": 1,
+      "hasRegularSleep": "No",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 4
+    },
+    {
+      "name": "Emily Clark",
+      "participatedInSchoolPrograms": "Yes",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 4,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "Yes",
+      "socialMediaUse": 6
+    },
+    {
+      "name": "Robert Brown",
+      "participatedInSchoolPrograms": "No",
+      "knowsAboutCrisisHotline": "Yes",
+      "physicalActivityHoursPerWeek": 5,
+      "hasRegularSleep": "Yes",
+      "accessToMentalHealthApps": "No",
+      "socialMediaUse": 3
+    }
+  ]
+}
