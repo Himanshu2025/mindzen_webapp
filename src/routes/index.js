@@ -10,14 +10,12 @@ import addPost from '../views/addPost.vue'
 import viewpost from '../views/viewPosts.vue'
 import map from '../views/Map.vue'
 import Tabledata02 from '../views/Tabledata02.vue'
-import chatbot from '../views/chatbot.vue'
-import map2 from '../views/map2.vue'
 import store from '@/store/store'
 
 const routes = [
   {
     path: '/',
-    redirect: '/signup'
+    redirect: '/userdashboard'
   },
   {
     path: '/signup',
@@ -50,14 +48,14 @@ const routes = [
     component: SendEmailview
   },
   {
-    path: '/Tabledata01',
-    name: 'Tableview',
-    component: Tabledata
-  },
-  {
     path: '/Tabledata02',
     name: 'Tableview02',
     component: Tabledata02
+  },
+  {
+    path: '/Tabledata01',
+    name: 'Tableview',
+    component: Tabledata
   },
   {
     path: '/addpost',
@@ -73,16 +71,6 @@ const routes = [
     path: '/map',
     name: 'map',
     component: map
-  },
-  {
-    path: '/map2',
-    name: 'map2',
-    component: map2
-  },
-  {
-    path: '/chatbot',
-    name: 'chatbot',
-    component: chatbot
   }
 ]
 

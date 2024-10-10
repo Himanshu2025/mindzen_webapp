@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { Button } from '@/components/ui/button'
 import axios from 'axios'
 import jsonToCsvExport from 'json-to-csv-export'
+import adminMenu from '@/components/adminMenu.vue'
 import {
   Table,
   TableHead,
@@ -11,15 +12,6 @@ import {
   TableBody,
   TableFooter
 } from '@/components/ui/table'
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger
-} from '@/components/ui/menubar'
 
 const table1Data = ref([])
 
@@ -34,11 +26,9 @@ onMounted(() => {
     })
 })
 
-// Pagination logic
 const currentPage = ref(1)
 const itemsPerPage = ref(10)
 
-// Paginated data based on the current page
 const paginatedData = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage.value
   return table1Data.value.slice(start, start + itemsPerPage.value)
@@ -72,23 +62,7 @@ const exportToCsv = () => {
 </script>
 
 <template>
-  <Menubar>
-    <MenubarMenu>
-      <MenubarTrigger>Menu</MenubarTrigger>
-      <MenubarContent>
-        <MenubarItem>
-          <router-link to="/SendEmail">Email Service</router-link>
-        </MenubarItem>
-        <MenubarItem>
-          <router-link to="/Tabledata01">User profile data</router-link>
-        </MenubarItem>
-        <MenubarSeparator />
-        <MenubarItem>Share</MenubarItem>
-        <MenubarSeparator />
-        <MenubarItem>Print</MenubarItem>
-      </MenubarContent>
-    </MenubarMenu>
-  </Menubar>
+  <adminMenu />
   <div class="flex justify-end my-4">
     <Button @click="exportToCsv">Export Data to CSV</Button>
   </div>

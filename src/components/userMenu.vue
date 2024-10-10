@@ -30,12 +30,11 @@ import {
             <router-link to="/addpost">Add post</router-link>
           </MenubarItem>
           <MenubarItem>
-            <router-link to="/addpost">View posts</router-link>
+            <router-link to="/viewpost">View posts</router-link>
           </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>Share</MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>Print</MenubarItem>
+          <MenubarItem>
+            <router-link to="/map">Find us</router-link>
+          </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>

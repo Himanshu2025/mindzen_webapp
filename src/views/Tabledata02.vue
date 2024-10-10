@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import axios from 'axios'
 import jsonToCsvExport from 'json-to-csv-export'
 import { Table, TableHead, TableRow, TableCell, TableBody } from '@/components/ui/table'
-
+import adminMenu from '@/components/adminMenu.vue'
 const table2Data = ref([])
 
 onMounted(() => {
@@ -55,6 +55,7 @@ const exportToCsv = () => {
 }
 </script>
 <template>
+  <adminMenu />
   <div class="flex justify-end my-4">
     <Button @click="exportToCsv">Export Data to CSV</Button>
   </div>

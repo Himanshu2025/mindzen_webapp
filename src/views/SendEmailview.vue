@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import adminMenu from '@/components/adminMenu.vue'
 import {
   Menubar,
   MenubarContent,
@@ -62,24 +63,8 @@ const sendEmail = async () => {
 </script>
 
 <template>
-  <Menubar>
-    <MenubarMenu>
-      <MenubarTrigger>Menu</MenubarTrigger>
-      <MenubarContent>
-        <MenubarItem>
-          <router-link to="/SendEmail">Email Service</router-link>
-        </MenubarItem>
-        <MenubarItem>
-          <router-link to="/Tabledata01">User profile data</router-link>
-        </MenubarItem>
-        <MenubarSeparator />
-        <MenubarItem>Share</MenubarItem>
-        <MenubarSeparator />
-        <MenubarItem>Print</MenubarItem>
-      </MenubarContent>
-    </MenubarMenu>
-  </Menubar>
-  <div class="max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg space-y-4">
+  <adminMenu></adminMenu>
+  <div class="max-w-lg mx-auto bg-white shadow-md rounded-lg space-y-4 p-4">
     <h2 class="text-2xl font-bold mb-4">Send an Email</h2>
 
     <form @submit.prevent="sendEmail" class="space-y-4">

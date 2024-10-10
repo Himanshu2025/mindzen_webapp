@@ -5,7 +5,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { collection, addDoc } from 'firebase/firestore'
 import db from '../firebase/init.js'
-
+import userMenu from '@/components/userMenu.vue'
 const title = ref('')
 const content = ref('')
 
@@ -32,6 +32,7 @@ const addPost = async () => {
 </script>
 
 <template>
+  <userMenu />
   <div class="max-w-lg mx-auto p-6 shadow-md rounded-lg bg-white space-y-4">
     <h2 class="text-2xl font-bold mb-4">Create a Post</h2>
     <form @submit.prevent="addPost" class="space-y-4">

@@ -1,6 +1,6 @@
 <script setup>
 import { GoogleMap, Marker, MarkerCluster, CustomMarker } from 'vue3-google-map'
-
+import userMenu from '@/components/userMenu.vue'
 const center = { lat: -28.024, lng: 140.887 }
 const locations = [
   { lat: -31.56391, lng: 147.154312 },
@@ -46,6 +46,7 @@ const sayHi = () => alert('Hi!')
 </script>
 
 <template>
+  <userMenu />
   <GoogleMap
     api-key="AIzaSyCgpG6hbUj97cO44q0dsPlJyPmG3IB93do"
     style="width: 100%; height: 500px"

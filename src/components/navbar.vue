@@ -1,23 +1,44 @@
 <script setup>
-import FirebaseSigninView from '@/views/FirebaseSigninView.vue'
+import { ref, onMounted } from 'vue'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import { signOut } from 'firebase/auth'
+import { Button } from '@/components/ui/button'
+const userEmail = ref(null)
+
+onMounted(() => {
+  const auth = getAuth()
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      userEmail.value = user.email
+    } else {
+      userEmail.value = null
+    }
+  })
+})
+
+const logout = () => {
+  const auth = getAuth()
+  signOut(auth)
+    .then(() => {
+      userEmail.value = null // Clear email on sign out
+    })
+    .catch((error) => {
+      console.error('Error logging out:', error)
+    })
+}
 </script>
 
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-white p-6">
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <a href><router-link to="/userDashboard"> Dashboard </router-link> </a>
+  <nav class="flex justify-between flex-wrap bg-white p-6">
+    <h2
+      class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
+    >
+      MindZen
+    </h2>
+    <div v-if="userEmail" class="text-sm text-gray-700">
+      Logged in as <span class="font-bold">{{ userEmail }}</span>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <a href> Logout </a>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <a href> <router-link to="/Firelogin"> Sign in</router-link> </a>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <a href> <router-link to="/Fireregister"> Register</router-link> </a>
-    </div>
-    <div>
-      <p>Logged in as {{}}</p>
-    </div>
+    <div v-else class="text-sm text-gray-700">Not logged in</div>
+    <Button @click="logout">Logout </Button>
   </nav>
 </template>

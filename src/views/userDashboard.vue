@@ -1,4 +1,6 @@
 <template>
+  <userMenu></userMenu>
+
   <div class="grid grid-cols-2 gap-4 p-4">
     <div class="bg-white p-8 rounded-lg shadow-lg flex w-full max-w-4xl">
       <h1 class="font-semibold">Welcome to Mindzen</h1>
@@ -27,3 +29,6 @@
     </div>
   </div>
 </template>
+<script setup>
+import userMenu from '@/components/userMenu.vue'
+</script>
