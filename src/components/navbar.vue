@@ -20,7 +20,8 @@ const logout = () => {
   const auth = getAuth()
   signOut(auth)
     .then(() => {
-      userEmail.value = null // Clear email on sign out
+      userEmail.value = null
+      router.push('/Firelogin')
     })
     .catch((error) => {
       console.error('Error logging out:', error)
