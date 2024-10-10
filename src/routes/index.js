@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Signup from '../views/signup.vue'
-import Signin from '../views/signin.vue'
 import UserDashboard from '../views/userDashboard.vue'
 import AdminDashboard from '../views/adminDashboard.vue'
 import FirebaseSigninView from '../views/FirebaseSigninView.vue'
 import FirebaseRegisterView from '../views/FirebaseRegisterView.vue'
 import SendEmailview from '../views/SendEmailview.vue'
-import TableDataView from '../views/TableDataview.vue'
+import Tabledata from '../views/Tabledata.vue'
+import addPost from '../views/addPost.vue'
+import viewpost from '../views/viewPosts.vue'
+import map from '../views/Map.vue'
+import Tabledata02 from '../views/Tabledata02.vue'
+import chatbot from '../views/chatbot.vue'
+import map2 from '../views/map2.vue'
 import store from '@/store/store'
 
 const routes = [
@@ -18,11 +23,6 @@ const routes = [
     path: '/signup',
     name: 'signup',
     component: Signup
-  },
-  {
-    path: '/signin',
-    name: 'signin',
-    component: Signin
   },
   {
     path: '/userDashboard',
@@ -50,9 +50,39 @@ const routes = [
     component: SendEmailview
   },
   {
-    path: '/Tabledata',
-    name: 'Tabledata',
-    component: TableDataView
+    path: '/Tabledata01',
+    name: 'Tableview',
+    component: Tabledata
+  },
+  {
+    path: '/Tabledata02',
+    name: 'Tableview02',
+    component: Tabledata02
+  },
+  {
+    path: '/addpost',
+    name: 'Addpost',
+    component: addPost
+  },
+  {
+    path: '/viewpost',
+    name: 'Viewpost',
+    component: viewpost
+  },
+  {
+    path: '/map',
+    name: 'map',
+    component: map
+  },
+  {
+    path: '/map2',
+    name: 'map2',
+    component: map2
+  },
+  {
+    path: '/chatbot',
+    name: 'chatbot',
+    component: chatbot
   }
 ]
 

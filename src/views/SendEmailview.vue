@@ -48,7 +48,7 @@ const sendEmail = async () => {
   try {
     console.log(body.value) // This will check if the body content is captured
     const recipientEmails = to.value.split(',').map((email) => email.trim())
-    await axios.post('http://localhost:3000/send-email', {
+    await axios.post('https://us-central1-mindzen-2a3e3.cloudfunctions.net/sendEmail', {
       to: to.value,
       subject: subject.value,
       text: body.value, // Ensure the body is being passed correctly
@@ -70,7 +70,7 @@ const sendEmail = async () => {
           <router-link to="/SendEmail">Email Service</router-link>
         </MenubarItem>
         <MenubarItem>
-          <router-link to="/Tabledata">User profile data</router-link>
+          <router-link to="/Tabledata01">User profile data</router-link>
         </MenubarItem>
         <MenubarSeparator />
         <MenubarItem>Share</MenubarItem>

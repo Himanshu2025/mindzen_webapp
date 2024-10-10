@@ -99,6 +99,334 @@
       "hasCounselor": "Yes",
       "numberOfSessions": 2,
       "mentalHealthDiagnosis": "Mild Anxiety"
+    },
+    {
+      "name": "Emma Wilson",
+      "age": 17,
+      "gender": "Female",
+      "anxietyLevel": 7,
+      "depressionLevel": 6,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Social Anxiety Disorder"
+    },
+    {
+      "name": "Daniel Lee",
+      "age": 15,
+      "gender": "Male",
+      "anxietyLevel": 5,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "Depression"
+    },
+    {
+      "name": "Olivia Taylor",
+      "age": 16,
+      "gender": "Female",
+      "anxietyLevel": 8,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 6,
+      "mentalHealthDiagnosis": "Panic Disorder"
+    },
+    {
+      "name": "Ethan Anderson",
+      "age": 18,
+      "gender": "Male",
+      "anxietyLevel": 4,
+      "depressionLevel": 3,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Mild Anxiety"
+    },
+    {
+      "name": "Ava Thomas",
+      "age": 14,
+      "gender": "Female",
+      "anxietyLevel": 6,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 3,
+      "mentalHealthDiagnosis": "Major Depressive Disorder"
+    },
+    {
+      "name": "Noah Harris",
+      "age": 17,
+      "gender": "Male",
+      "anxietyLevel": 7,
+      "depressionLevel": 4,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 5,
+      "mentalHealthDiagnosis": "OCD"
+    },
+    {
+      "name": "Isabella Martin",
+      "age": 15,
+      "gender": "Female",
+      "anxietyLevel": 5,
+      "depressionLevel": 6,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Adjustment Disorder"
+    },
+    {
+      "name": "William Thompson",
+      "age": 16,
+      "gender": "Male",
+      "anxietyLevel": 8,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 8,
+      "mentalHealthDiagnosis": "PTSD"
+    },
+    {
+      "name": "Sophie Garcia",
+      "age": 18,
+      "gender": "Female",
+      "anxietyLevel": 6,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "Generalized Anxiety"
+    },
+    {
+      "name": "James Rodriguez",
+      "age": 14,
+      "gender": "Male",
+      "anxietyLevel": 3,
+      "depressionLevel": 4,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Mild Depression"
+    },
+    {
+      "name": "Charlotte White",
+      "age": 17,
+      "gender": "Female",
+      "anxietyLevel": 7,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 6,
+      "mentalHealthDiagnosis": "Bipolar Disorder"
+    },
+    {
+      "name": "Benjamin Davis",
+      "age": 15,
+      "gender": "Male",
+      "anxietyLevel": 5,
+      "depressionLevel": 6,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 3,
+      "mentalHealthDiagnosis": "Social Anxiety Disorder"
+    },
+    {
+      "name": "Amelia Moore",
+      "age": 16,
+      "gender": "Female",
+      "anxietyLevel": 8,
+      "depressionLevel": 7,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Panic Disorder"
+    },
+    {
+      "name": "Lucas Jackson",
+      "age": 18,
+      "gender": "Male",
+      "anxietyLevel": 6,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 5,
+      "mentalHealthDiagnosis": "ADHD"
+    },
+    {
+      "name": "Mia Taylor",
+      "age": 14,
+      "gender": "Female",
+      "anxietyLevel": 4,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 2,
+      "mentalHealthDiagnosis": "Depression"
+    },
+    {
+      "name": "Henry Anderson",
+      "age": 17,
+      "gender": "Male",
+      "anxietyLevel": 7,
+      "depressionLevel": 6,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Generalized Anxiety"
+    },
+    {
+      "name": "Evelyn Martin",
+      "age": 15,
+      "gender": "Female",
+      "anxietyLevel": 5,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "Major Depressive Disorder"
+    },
+    {
+      "name": "Alexander Thompson",
+      "age": 16,
+      "gender": "Male",
+      "anxietyLevel": 8,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 7,
+      "mentalHealthDiagnosis": "OCD"
+    },
+    {
+      "name": "Harper Garcia",
+      "age": 18,
+      "gender": "Female",
+      "anxietyLevel": 6,
+      "depressionLevel": 4,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Adjustment Disorder"
+    },
+    {
+      "name": "Sebastian Rodriguez",
+      "age": 14,
+      "gender": "Male",
+      "anxietyLevel": 3,
+      "depressionLevel": 6,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 3,
+      "mentalHealthDiagnosis": "Mild Depression"
+    },
+    {
+      "name": "Scarlett White",
+      "age": 17,
+      "gender": "Female",
+      "anxietyLevel": 7,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 5,
+      "mentalHealthDiagnosis": "Social Anxiety Disorder"
+    },
+    {
+      "name": "Jack Davis",
+      "age": 15,
+      "gender": "Male",
+      "anxietyLevel": 5,
+      "depressionLevel": 5,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Mild Anxiety"
+    },
+    {
+      "name": "Aria Moore",
+      "age": 16,
+      "gender": "Female",
+      "anxietyLevel": 8,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 6,
+      "mentalHealthDiagnosis": "Bipolar Disorder"
+    },
+    {
+      "name": "Leo Jackson",
+      "age": 18,
+      "gender": "Male",
+      "anxietyLevel": 6,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "PTSD"
+    },
+    {
+      "name": "Luna Taylor",
+      "age": 14,
+      "gender": "Female",
+      "anxietyLevel": 4,
+      "depressionLevel": 5,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Mild Depression"
+    },
+    {
+      "name": "Owen Anderson",
+      "age": 17,
+      "gender": "Male",
+      "anxietyLevel": 7,
+      "depressionLevel": 6,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 5,
+      "mentalHealthDiagnosis": "Generalized Anxiety"
+    },
+    {
+      "name": "Nora Martin",
+      "age": 15,
+      "gender": "Female",
+      "anxietyLevel": 5,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 3,
+      "mentalHealthDiagnosis": "Depression"
+    },
+    {
+      "name": "Elijah Thompson",
+      "age": 16,
+      "gender": "Male",
+      "anxietyLevel": 8,
+      "depressionLevel": 5,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Social Anxiety Disorder"
+    },
+    {
+      "name": "Zoe Garcia",
+      "age": 18,
+      "gender": "Female",
+      "anxietyLevel": 6,
+      "depressionLevel": 8,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 7,
+      "mentalHealthDiagnosis": "Major Depressive Disorder"
+    },
+    {
+      "name": "Liam Rodriguez",
+      "age": 14,
+      "gender": "Male",
+      "anxietyLevel": 3,
+      "depressionLevel": 4,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 2,
+      "mentalHealthDiagnosis": "Mild Anxiety"
+    },
+    {
+      "name": "Stella White",
+      "age": 17,
+      "gender": "Female",
+      "anxietyLevel": 7,
+      "depressionLevel": 6,
+      "hasCounselor": "No",
+      "numberOfSessions": 0,
+      "mentalHealthDiagnosis": "Adjustment Disorder"
+    },
+    {
+      "name": "Gabriel Davis",
+      "age": 15,
+      "gender": "Male",
+      "anxietyLevel": 5,
+      "depressionLevel": 7,
+      "hasCounselor": "Yes",
+      "numberOfSessions": 4,
+      "mentalHealthDiagnosis": "Depression"
+    },
+    {
+      "name": "Hazel Moore",
+      "age": 16,
+      "gender": "Female",
+      "anxietyLevel": 8,
+      "depressionLevel": 5,
+      "hasCounselor": "Yes"
     }
   ]
 }
