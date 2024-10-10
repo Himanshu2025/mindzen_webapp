@@ -3,8 +3,9 @@ import { ref, onMounted } from 'vue'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { signOut } from 'firebase/auth'
 import { Button } from '@/components/ui/button'
+import { useRouter } from 'vue-router'
 const userEmail = ref(null)
-
+const router = useRouter()
 onMounted(() => {
   const auth = getAuth()
   onAuthStateChanged(auth, (user) => {
@@ -40,6 +41,6 @@ const logout = () => {
       Logged in as <span class="font-bold">{{ userEmail }}</span>
     </div>
     <div v-else class="text-sm text-gray-700">Not logged in</div>
-    <Button @click="logout">Logout </Button>
+    <Button @click="logout">Logout</Button>
   </nav>
 </template>
