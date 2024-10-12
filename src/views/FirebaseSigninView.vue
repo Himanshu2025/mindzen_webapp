@@ -17,7 +17,7 @@
       />
       <Button
         @click="signin"
-        class="w-full bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg font-semibold transition-all"
+        class="w-full bg-red-600 hover:bg-red-600 text-white p-3 rounded-lg font-semibold transition-all"
       >
         Sign in
       </Button>

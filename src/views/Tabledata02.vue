@@ -9,26 +9,23 @@ const table2Data = ref([])
 
 onMounted(() => {
   axios
-    .get('/Behaviourdata.json') // Fetch from the public directory
+    .get('/Behaviourdata.json')
     .then((response) => {
-      table2Data.value = response.data.table2Data // Accessing the array inside the JSON
+      table2Data.value = response.data.table2Data
     })
     .catch((error) => {
       console.error('Error fetching data:', error)
     })
 })
 
-// Pagination logic
 const currentPage = ref(1)
 const itemsPerPage = ref(10)
 
-// Paginated data based on the current page
 const paginatedData = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage.value
   return table2Data.value.slice(start, start + itemsPerPage.value)
 })
 
-// Total pages for pagination
 const totalPages = computed(() => Math.ceil(table2Data.value.length / itemsPerPage.value))
 
 const nextPage = () => {
@@ -60,7 +57,6 @@ const exportToCsv = () => {
     <Button @click="exportToCsv">Export Data to CSV</Button>
   </div>
 
-  <!-- Table for Behavioral Data -->
   <Table>
     <TableHead>
       <TableCell>Name</TableCell>
@@ -84,7 +80,6 @@ const exportToCsv = () => {
     </TableBody>
   </Table>
 
-  <!-- Pagination controls -->
   <div class="flex justify-between items-center mt-4">
     <Button @click="previousPage" :disabled="currentPage === 1">Previous</Button>
     <span>Page {{ currentPage }} of {{ totalPages }}</span>

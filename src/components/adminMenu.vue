@@ -36,8 +36,6 @@ import {
             <router-link to="/Tabledata02">Behavioral data</router-link>
           </MenubarItem>
           <MenubarSeparator />
-          <MenubarSeparator />
-          <MenubarItem>Print</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>

@@ -40,7 +40,7 @@ const logout = () => {
     <div v-if="userEmail" class="text-sm text-gray-700">
       Logged in as <span class="font-bold">{{ userEmail }}</span>
     </div>
-    <div v-else class="text-sm text-gray-700">Not logged in</div>
-    <Button @click="logout">Logout</Button>
+    <div v-else class="text-sm text-gray-800">Not logged in</div>
+    <Button v-if="userEmail" @click="logout">Logout</Button>
   </nav>
 </template>

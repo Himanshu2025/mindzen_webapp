@@ -11,7 +11,7 @@
       <Card v-for="post in posts" :key="post.id">
         <CardHeader>
           <CardTitle>{{ post.title }}</CardTitle>
-          <CardDescription>Posted on: {{ formatDate(post.createdAt._seconds) }}</CardDescription>
+          <CardDescription>Posted on: {{ formatDate(post.createdAt.seconds) }}</CardDescription>
         </CardHeader>
         <CardContent>
           <p>{{ post.content }}</p>
@@ -22,50 +22,46 @@
 </template>
 
 <script setup>
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-
+import { ref, onMounted } from 'vue'
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import userMenu from '@/components/userMenu.vue'
-</script>
-
-<script>
 import axios from 'axios'
 
-export default {
-  data() {
-    return {
-      posts: [],
-      postCount: 0
-    }
-  },
-  methods: {
-    formatDate(seconds) {
-      const date = new Date(seconds * 1000)
-      return date.toLocaleString() // Formats the date in a readable string
-    },
-    async fetchPosts() {
-      try {
-        // Fetch posts and post count using axios
-        const postsResponse = await axios.get('https://getallposts-eopph4f32q-uc.a.run.app')
-        this.posts = postsResponse.data.posts
+// Firestore setup
+const db = getFirestore()
+const postsCollection = collection(db, 'posts')
 
-        const countResponse = await axios.get('https://countposts-eopph4f32q-uc.a.run.app/')
-        this.postCount = countResponse.data.postCount
-      } catch (error) {
-        console.error('Error fetching data:', error)
-      }
-    }
-  },
-  mounted() {
-    this.fetchPosts()
+const posts = ref([])
+const postCount = ref(0)
+
+const formatDate = (seconds) => {
+  const date = new Date(seconds * 1000)
+  return date.toLocaleString()
+}
+
+const fetchPosts = async () => {
+  try {
+    const querySnapshot = await getDocs(postsCollection)
+    posts.value = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+  } catch (error) {
+    console.error('Error fetching posts:', error)
   }
 }
+
+const fetchPostCount = async () => {
+  try {
+    const response = await axios.get('https://countposts-eopph4f32q-uc.a.run.app')
+    postCount.value = response.data.postCount
+  } catch (error) {
+    console.error('Error fetching post count:', error)
+  }
+}
+
+onMounted(() => {
+  fetchPosts()
+  fetchPostCount()
+})
 </script>
 
 <style scoped>

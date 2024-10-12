@@ -42,11 +42,15 @@ const rectangle = {
     west: -116.251
   }
 }
-const sayHi = () => alert('Hi!')
 </script>
 
 <template>
   <userMenu />
+  <h2
+    class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 pt-4"
+  >
+    Mindzen centres near you
+  </h2>
   <GoogleMap
     api-key="AIzaSyCgpG6hbUj97cO44q0dsPlJyPmG3IB93do"
     style="width: 100%; height: 500px"
@@ -57,9 +61,6 @@ const sayHi = () => alert('Hi!')
       <Marker v-for="(location, i) in locations" :key="i" :options="{ position: location }" />
     </MarkerCluster>
   </GoogleMap>
-  <CustomControl position="BOTTOM_CENTER">
-    <button class="custom-btn" @click="sayHi">👋</button>
-  </CustomControl>
 </template>
 <style scoped>
 .custom-btn {
