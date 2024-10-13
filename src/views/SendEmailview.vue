@@ -1,19 +1,9 @@
 <script setup lang="ts">
+import adminMenu from '@/components/adminMenu.vue'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import adminMenu from '@/components/adminMenu.vue'
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger
-} from '@/components/ui/menubar'
 
-import router from '@/routes'
 import axios from 'axios'
 import { ref } from 'vue'
 
@@ -47,15 +37,15 @@ const onFileChange = (e) => {
 
 const sendEmail = async () => {
   try {
-    console.log(body.value) // This will check if the body content is captured
+    console.log(body.value)
     const recipientEmails = to.value.split(',').map((email) => email.trim())
-    await axios.post('https://us-central1-mindzen-2a3e3.cloudfunctions.net/sendEmail', {
+    await axios.post('http://localhost:3000/send-email', {
       to: to.value,
       subject: subject.value,
-      text: body.value, // Ensure the body is being passed correctly
+      text: body.value,
       attachment: attachment.value
     })
-    message.value = 'Email sent successfully!'
+    message.value = 'Email sent!'
   } catch (error) {
     message.value = 'Failed to send email.'
   }
@@ -92,7 +82,7 @@ const sendEmail = async () => {
 
       <Button
         type="submit"
-        class="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+        class="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-black"
       >
         Send Email
       </Button>

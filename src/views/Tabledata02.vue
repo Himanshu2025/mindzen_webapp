@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import adminMenu from '@/components/adminMenu.vue'
 import { Button } from '@/components/ui/button'
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@/components/ui/table'
 import axios from 'axios'
 import jsonToCsvExport from 'json-to-csv-export'
-import { Table, TableHead, TableRow, TableCell, TableBody } from '@/components/ui/table'
-import adminMenu from '@/components/adminMenu.vue'
+import { computed, onMounted, ref } from 'vue'
 const table2Data = ref([])
 
 onMounted(() => {

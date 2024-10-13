@@ -26,14 +26,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
-import { useRouter } from 'vue-router'
-import userDashboard from './userDashboard.vue'
-import adminDashboard from './adminDashboard.vue'
 import { Button } from '@/components/ui/button'
-import userMenu from '@/components/userMenu.vue'
 import Input from '@/components/ui/input/Input.vue'
+import userMenu from '@/components/userMenu.vue'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 const email = ref('')
 const password = ref('')
 const router = useRouter()

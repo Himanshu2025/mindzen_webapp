@@ -27,13 +27,10 @@
 
 <script setup>
 import { Button } from '@/components/ui/button'
-import InputText from 'primevue/inputtext'
-import { Alert } from '@/components/ui/alert'
-import { ref } from 'vue'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
-import { useRouter } from 'vue-router'
-import Checkbox from 'primevue/checkbox'
 import userMenu from '@/components/userMenu.vue'
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 const email = ref('')
 const password = ref('')
 

@@ -1,6 +1,6 @@
 <script setup>
-import { GoogleMap, Marker, MarkerCluster, CustomMarker } from 'vue3-google-map'
 import userMenu from '@/components/userMenu.vue'
+import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map'
 const center = { lat: -28.024, lng: 140.887 }
 const locations = [
   { lat: -31.56391, lng: 147.154312 },
