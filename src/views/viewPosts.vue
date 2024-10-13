@@ -28,7 +28,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import userMenu from '@/components/userMenu.vue'
 import axios from 'axios'
 
-// Firestore setup
+
 const db = getFirestore()
 const postsCollection = collection(db, 'posts')
 

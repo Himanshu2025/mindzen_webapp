@@ -6,13 +6,14 @@ import { Button } from '@/components/ui/button'
 import { collection, addDoc } from 'firebase/firestore'
 import db from '../firebase/init.js'
 import userMenu from '@/components/userMenu.vue'
+import { Alert } from '@/components/ui/alert'
 const title = ref('')
 const content = ref('')
 
 const addPost = async () => {
   try {
     if (!title.value || !content.value) {
-      alert('Both title and content are required.')
+      Alert('Both title and content are required.')
       return
     }
 
@@ -24,7 +25,7 @@ const addPost = async () => {
 
     title.value = ''
     content.value = ''
-    alert('Post added successfully!')
+    Alert('Post added successfully!')
   } catch (error) {
     console.error('Error adding post: ', error)
   }
