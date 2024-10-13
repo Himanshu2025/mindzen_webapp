@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import adminMenu from '@/components/adminMenu.vue'
-import router from '@/routes'
-import { type Ref, ref } from 'vue'
-import type { DateRange } from 'radix-vue'
-import { getLocalTimeZone, today } from '@internationalized/date'
-import { RangeCalendar } from '@/components/ui/range-calendar'
-import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { RangeCalendar } from '@/components/ui/range-calendar'
+import { getLocalTimeZone, today } from '@internationalized/date'
+import type { DateRange } from 'radix-vue'
+import { ref, type Ref } from 'vue'
 
 const start = today(getLocalTimeZone())
 const end = start.add({ days: 7 })
@@ -21,7 +20,6 @@ const addTodo = () => {
   }
 }
 
-// Function to remove a to-do item
 const removeTodo = (index: number) => {
   todos.value.splice(index, 1)
 }

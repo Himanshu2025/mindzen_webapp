@@ -1,19 +1,18 @@
 <script setup>
-import { ref } from 'vue'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Button } from '@/components/ui/button'
-import { collection, addDoc } from 'firebase/firestore'
-import db from '../firebase/init.js'
 import userMenu from '@/components/userMenu.vue'
-import { Alert } from '@/components/ui/alert'
+import { addDoc, collection } from 'firebase/firestore'
+import { ref } from 'vue'
+import db from '../firebase/init.js'
 const title = ref('')
 const content = ref('')
 
 const addPost = async () => {
   try {
     if (!title.value || !content.value) {
-      Alert('Both title and content are required.')
+      alert('Both title and content are required.')
       return
     }
 
@@ -25,7 +24,7 @@ const addPost = async () => {
 
     title.value = ''
     content.value = ''
-    Alert('Post added successfully!')
+    alert('Post added successfully!')
   } catch (error) {
     console.error('Error adding post: ', error)
   }

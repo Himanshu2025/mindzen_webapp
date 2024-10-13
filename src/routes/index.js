@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Signup from '../views/signup.vue'
 import UserDashboard from '../views/userDashboard.vue'
 import AdminDashboard from '../views/adminDashboard.vue'
 import FirebaseSigninView from '../views/FirebaseSigninView.vue'
@@ -15,12 +14,7 @@ import store from '@/store/store'
 const routes = [
   {
     path: '/',
-    redirect: '/userdashboard'
-  },
-  {
-    path: '/signup',
-    name: 'signup',
-    component: Signup
+    redirect: '/Firelogin'
   },
   {
     path: '/userDashboard',

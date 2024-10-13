@@ -23,16 +23,19 @@
             :class="
               cn('w-[280px] justify-start text-left font-normal', !value && 'text-muted-foreground')
             "
+            :disabled="submitted"
           >
             <CalendarIcon class="mr-2 h-4 w-4" />
             {{ value ? df.format(value.toDate(getLocalTimeZone())) : 'Pick a date' }}
           </Button>
         </PopoverTrigger>
         <PopoverContent class="w-auto p-0">
-          <Calendar v-model="value" initial-focus />
+          <Calendar v-model="value" initial-focus :disabled="submitted" />
         </PopoverContent>
-        <div class="px-6"><Button> Submit </Button></div>
       </Popover>
+      <div class="px-6">
+        <Button @click="submitDate" :disabled="submitted">Submit</Button>
+      </div>
     </div>
   </div>
 </template>
@@ -45,9 +48,21 @@ import { Calendar } from '@/components/ui/calendar'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
+import { Alert } from '@/components/ui/alert'
+import userMenu from '@/components/userMenu.vue'
 const df = new DateFormatter('en-US', {
   dateStyle: 'long'
 })
 
 const value = ref<DateValue>()
+const submitted = ref(false)
+
+const submitDate = () => {
+  if (value.value) {
+    alert(`You selected appointement date as ${df.format(value.value.toDate(getLocalTimeZone()))}`)
+    submitted.value = true
+  } else {
+    alert('Please select a date first.')
+  }
+}
 </script>

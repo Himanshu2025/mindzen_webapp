@@ -1,9 +1,5 @@
 <script setup>
-import signup from './views/signup.vue'
-import userDashboard from './views/userDashboard.vue'
-import adminDashboard from './views/adminDashboard.vue'
 import navbar from './components/navbar.vue'
-import { ref } from 'vue'
 </script>
 
 <template>
