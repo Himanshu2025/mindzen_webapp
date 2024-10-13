@@ -31,6 +31,7 @@ import userMenu from '@/components/userMenu.vue'
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { Input } from '@/components/ui/input'
 const email = ref('')
 const password = ref('')
 

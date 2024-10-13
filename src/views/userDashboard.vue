@@ -43,7 +43,7 @@
       >
         Chat with Mindzen AI
       </h2>
-      <div class="bg-red-700 p-8 rounded-lg shadow-lg flex w-full max-w-4xl">
+      <div class="bg-blue-100 p-8 rounded-lg shadow-lg flex w-full max-w-4xl">
         <div class="mt-4">
           <input
             v-model="promptText"
@@ -69,7 +69,7 @@ import userMenu from '@/components/userMenu.vue'
 import { cn } from '@/lib/utils'
 import { DateFormatter, getLocalTimeZone, type DateValue } from '@internationalized/date'
 import { CalendarIcon } from 'lucide-vue-next'
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 const chatbotResponse = ref('')
 const promptText = ref('')
